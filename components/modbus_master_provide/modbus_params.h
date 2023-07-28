@@ -1,16 +1,15 @@
-
 #ifndef _DEVICE_PARAMS
 #define _DEVICE_PARAMS
 
 #include <stdint.h>
 
-#define MB_PORT_NUM     0
-#define MB_DEV_SPEED    115200
+#define MB_PORT_NUM     1
+#define MB_DEV_SPEED    9600
 
 #define MB_ADDR_HUM_TEMP_SENS     3
 
-#define CONFIG_MB_UART_RXD 3
-#define CONFIG_MB_UART_TXD 1
+#define CONFIG_MB_UART_RXD 22
+#define CONFIG_MB_UART_TXD 23
 #define CONFIG_MB_UART_RTS 18
 
 #define POLL_TIMEOUT_MS                 (1000)

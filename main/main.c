@@ -16,13 +16,17 @@
 
 #include "mb_m_provide.h"
 
+#include "mqtt_provide.h"
+
 
 void app_main(void) {
 
     esp_log_level_set("*", ESP_LOG_INFO);
-    //esp_log_level_set("VAL1", ESP_LOG_INFO);
+
+    mqtt_task();
 
     start_mb_task();
+
     while (1) {
         vTaskDelay(pdTICKS_TO_MS(1000));
     }

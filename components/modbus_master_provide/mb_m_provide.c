@@ -129,6 +129,10 @@ static esp_err_t master_init(void) {
     return err;
 }
 
+void get_data_sens(int16_t *hum, int16_t *temp) {
+    *hum = (int16_t)holding_reg_params.hum_val;
+    *temp = (int16_t)holding_reg_params.temp_val;
+}
 
 void mb_task(void *pv) {
     ESP_ERROR_CHECK(master_init());
