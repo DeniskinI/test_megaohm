@@ -1,0 +1,10 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "mb_m_provide.h": "c",
+        "modbus_params.h": "c",
+        "stdint.h": "c",
+        "mbcontroller.h": "c"
+    },
+    "idf.portWin": "COM3"
+}
