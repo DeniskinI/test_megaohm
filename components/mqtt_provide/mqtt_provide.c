@@ -61,7 +61,7 @@ void mqtt_send_task(void *pV) {
             memset(buf, 0, sizeof(buf));
             len_msg = sprintf(buf, "t = %.1f, h = %.1f", (float)temp, (float)hum);
             ESP_LOGI(TAG, "sent publish data: %s", buf);
-            msg_id = esp_mqtt_client_publish(client, "mvp/0000/1000000000200000000030D7/tm", buf, len_msg, 2, 0);
+            msg_id = esp_mqtt_client_publish(client, MQTT_TOPIC_PUBLISH, buf, len_msg, 2, 0);
             ESP_LOGI(TAG, "sent publish successful, msg_id=%d", msg_id);
         }
     }
