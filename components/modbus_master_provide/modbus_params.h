@@ -8,11 +8,11 @@
 
 #define MB_ADDR_HUM_TEMP_SENS     3
 
-#define CONFIG_MB_UART_RXD 22
-#define CONFIG_MB_UART_TXD 23
-#define CONFIG_MB_UART_RTS 18
+#define CONFIG_MB_UART_RXD 16
+#define CONFIG_MB_UART_TXD 17
+#define CONFIG_MB_UART_RTS 25
 
-#define POLL_TIMEOUT_MS                 (1000)
+#define POLL_TIMEOUT_MS                 (5000)
 #define POLL_TIMEOUT_TICS               (POLL_TIMEOUT_MS / portTICK_RATE_MS)
 
 
